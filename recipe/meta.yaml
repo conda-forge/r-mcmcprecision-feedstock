@@ -1,4 +1,4 @@
-{% set version = '0.3.9' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MCMCprecision_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MCMCprecision/MCMCprecision_{{ version }}.tar.gz
-  sha256: 90bb5874c3d39269ffab935517698b420faf73d8bbec81b78f38dccca7f8b4fe
+  sha256: 4e419c325a9e66cab67ea2c141062791bd52a6e6308395731b5307b323641864
 
 build:
   merge_build_host: True  # [win]
