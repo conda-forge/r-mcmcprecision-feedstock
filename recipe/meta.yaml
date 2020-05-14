@@ -39,6 +39,7 @@ requirements:
     - r-rcppprogress
     - r-combinat
     - libblas
+    - liblapack
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
