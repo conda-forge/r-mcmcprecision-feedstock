@@ -1,6 +1,5 @@
 {% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-mcmcprecision
@@ -13,8 +12,7 @@ source:
   sha256: 4e419c325a9e66cab67ea2c141062791bd52a6e6308395731b5307b323641864
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -42,7 +42,6 @@ requirements:
     - liblapack
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-rcpp
     - r-rcpparmadillo
