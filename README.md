@@ -9,7 +9,7 @@ About r-mcmcprecision
 
 Home: https://github.com/danheck/MCMCprecision
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Summary: Estimates the precision of transdimensional Markov chain Monte Carlo  (MCMC) output, which is often used for Bayesian analysis of models with different  dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible  jump MCMC) relies on sampling a discrete model-indicator variable to estimate  the posterior model probabilities. If only few switches occur between the models,  precision may be low and assessment based on the assumption of independent  samples misleading. Based on the observed transition matrix of the indicator  variable, the method of Heck, Overstall, Gronau, & Wagenmakers (2018,  Statistics & Computing) <doi:10.1007/s11222-018-9828-0> draws posterior samples  of the stationary distribution to (a) assess the uncertainty in the estimated  posterior model probabilities and (b) estimate the effective sample size of  the MCMC output.
 
@@ -18,7 +18,7 @@ About r-mcmcprecision
 
 Home: https://github.com/danheck/MCMCprecision
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Summary: Estimates the precision of transdimensional Markov chain Monte Carlo  (MCMC) output, which is often used for Bayesian analysis of models with different  dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible  jump MCMC) relies on sampling a discrete model-indicator variable to estimate  the posterior model probabilities. If only few switches occur between the models,  precision may be low and assessment based on the assumption of independent  samples misleading. Based on the observed transition matrix of the indicator  variable, the method of Heck, Overstall, Gronau, & Wagenmakers (2018,  Statistics & Computing) <doi:10.1007/s11222-018-9828-0> draws posterior samples  of the stationary distribution to (a) assess the uncertainty in the estimated  posterior model probabilities and (b) estimate the effective sample size of  the MCMC output.
 
@@ -51,6 +51,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7411&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mcmcprecision-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7411&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mcmcprecision-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.4</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7411&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mcmcprecision-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.4" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7411&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mcmcprecision-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.4</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7411&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mcmcprecision-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -210,5 +238,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 
