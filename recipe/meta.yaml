@@ -56,7 +56,7 @@ test:
 
 about:
   home: https://github.com/danheck/MCMCprecision
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Estimates the precision of transdimensional Markov chain Monte Carlo  (MCMC) output,
     which is often used for Bayesian analysis of models with different  dimensionality
     (e.g., model selection). Transdimensional MCMC (e.g., reversible  jump MCMC) relies
@@ -68,7 +68,7 @@ about:
     draws posterior samples  of the stationary distribution to (a) assess the uncertainty
     in the estimated  posterior model probabilities and (b) estimate the effective sample
     size of  the MCMC output.
-  license_family: GPL-3.0-only
+  license_family: GPL-3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
