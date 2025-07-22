@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MCMCprecision_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MCMCprecision/MCMCprecision_{{ version }}.tar.gz
-  sha256: 4e419c325a9e66cab67ea2c141062791bd52a6e6308395731b5307b323641864
+  sha256: fc2109165a7f147e7d2a782774617e328282e10cf2e0a54a2ef1bf064db9fa04
 
 build:
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,17 +57,9 @@ test:
 about:
   home: https://github.com/danheck/MCMCprecision
   license: GPL-3.0-only
-  summary: Estimates the precision of transdimensional Markov chain Monte Carlo  (MCMC) output,
-    which is often used for Bayesian analysis of models with different  dimensionality
-    (e.g., model selection). Transdimensional MCMC (e.g., reversible  jump MCMC) relies
-    on sampling a discrete model-indicator variable to estimate  the posterior model
-    probabilities. If only few switches occur between the models,  precision may be
-    low and assessment based on the assumption of independent  samples misleading. Based
-    on the observed transition matrix of the indicator  variable, the method of Heck,
-    Overstall, Gronau, & Wagenmakers (2018,  Statistics & Computing) <doi:10.1007/s11222-018-9828-0>
-    draws posterior samples  of the stationary distribution to (a) assess the uncertainty
-    in the estimated  posterior model probabilities and (b) estimate the effective sample
-    size of  the MCMC output.
+  summary: Estimates the precision of transdimensional Markov chain Monte Carlo  (MCMC) output, which is often used for Bayesian analysis of models with different  dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible  jump MCMC) relies on sampling a discrete model-indicator variable to estimate  the
+    posterior model probabilities. If only few switches occur between the models,  precision may be low and assessment based on the assumption of independent  samples misleading. Based on the observed transition matrix of the indicator  variable, the method of Heck, Overstall, Gronau, & Wagenmakers (2018,  Statistics & Computing)
+    <doi:10.1007/s11222-018-9828-0> draws posterior samples  of the stationary distribution to (a) assess the uncertainty in the estimated  posterior model probabilities and (b) estimate the effective sample size of  the MCMC output.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
